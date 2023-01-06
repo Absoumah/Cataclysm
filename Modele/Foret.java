@@ -1,30 +1,68 @@
 package Modele;
 
-import Modele.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
-class Foret implements ZoneDeJeu {
+public class Foret extends ZoneDeJeu {
 
-  private Personnage personnage;
-  public Plante creerBuisson() {
-    return new Buisson();
-  }
+  public Foret(BufferedReader buffer, int ligne, int colonne) throws IOException {
+    matrice=new String[ligne][colonne];
+    this.ligne=ligne;
+    this.colonne=colonne;
+    String line;
+    int l=0;
+    while( (line = buffer.readLine()) != null)
+    {
+      for (int i=0; i<line.length(); i++){
+        char c = line.charAt(i);
+        switch (c){
+          case '@':
+            Personnage personnage = creerPersonnage();
+            personnage.setPosition(l,i);
+            matrice[l][i]=personnage.getCar();
+            break;
+          case 'A':
+            matrice[l][i]=(creerPlante().getCar());
+            break;
+          case 'B':
+            matrice[l][i]=(creerBuisson().getCar());
+            break;
+          case 'C':
+            matrice[l][i]=(creerChampignon().getCar());;
+            break;
+          case 'E':
+            Animal a = creerAnimal(l,i);
+            lesAnimaux.add(a);
+            matrice[l][i]=a.getCar();
+            break;
+          case 'G':
+            matrice[l][i]=(creerAliment().getCar());
+            break;
+          case 'M':
+            matrice[l][i]=creerAlimentDanger().getCar();
+            break;
+          case 'R':
+            AnimalDanger r = creerAnimalDanger(l,i);
+            lesAnimauxDanger.add(r);
+            matrice[l][i]=r.getCar();
+            break;
+          case ' ':
+            matrice[l][i]=creerZoneVide().car;
+            break;
+          default:
+            matrice[l][i]=creerZoneVide().car;
+            break;
+        }
+      }
+      l+=1;
+    }
 
-  public Aliment creerChampignon() {
-    return new Champignon();
-  }
-
-  public ZoneVide creerZoneVide() {
-    return new ZoneVide();
   }
 
   @Override
-  public Personnage creerPersonnage() {
-    return new Personnage();
-  }
-
-  @Override
-  public Animal creerAnimal() {
-    return new Ecureuil();
+  public Animal creerAnimal(int x, int y) {
+    return new Ecureuil(x,y);
   }
 
   @Override
@@ -38,8 +76,8 @@ class Foret implements ZoneDeJeu {
   }
 
   @Override
-  public AnimalDanger creerAnimalDanger() {
-    return new Renard();
+  public AnimalDanger creerAnimalDanger(int x, int y) {
+    return new Renard(x,y);
   }
 
   @Override

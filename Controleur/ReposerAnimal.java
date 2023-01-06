@@ -1,19 +1,19 @@
 package Controleur;
 
 import Modele.Personnage;
-import Vue.Icommande;
+import Modele.ZoneDeJeu;
 
-class ReposerAnimal implements Icommande {
+public class ReposerAnimal implements Icommande {
   @Override
-  public void execute() {
-
+  public void execute(ZoneDeJeu zoneDeJeu) {
+    personnage.reposerAnimal(zoneDeJeu);
   }
 
   @Override
-  public void undo() {
+  public void undo(ZoneDeJeu zoneDeJeu) {
 
   }
 
-  private Personnage personnage;
+  private Personnage personnage = Personnage.getInstance();
 
 }

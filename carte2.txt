@@ -1,0 +1,38 @@
+J
+35
+100
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTBTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+T                                   BBB                                       BB                   T
+T       TBH                                                         B  B            B              T
+T                                                                         B   B      B             T
+B                      HHHHHHHHHH N                                   BB           BB   B  S       B
+T               C    H   HHHHHHN   HHHH                                                            T
+           CCC     C  C CBBB HH HH   HN   H                                       T                T
+TBB                  HHHHHHHH                    BBBBBB             BBBBB T B   BB                 T
+T                           N           TT TT  BB BBB             TTT     B        TTTTTTTTTTTTTTTTT
+TT    BBB                                     HB B  B  TT        TBBB                    @          
+B                        M  M           B BB BBBBBB BB                   M         TTTTTTTTTTTTTTTTT
+T        BBB       M    M                       TTTTT                              B   BBB         T
+T                                               BBBBBBB B B                        B       BBB     B
+B                                                                                  BBBBB           T
+T                                                                                                  T
+         T                                                       C            B B        BBB       T
+T          T  T               B     B  B                   SN H   H            B  BBB              T
+               H               B  B     BB                    H NS HH    H            T     B      B
+B   M   T H T                    BBBB   B                        HN   H                  TT B      T
+B        T   N                B    B  BS             M            H  H                  BBB        T
+T            BB   NS                                                  SN  C             B       TT T
+      H  HBT    CB             B BB            BBBB  S  M    BBB                            T      T
+T        N     N                B                    BB     M                      B  TT           T
+                            B                       BBBBB     BB                      B   B TT     B
+B                                                         BB                            T          B
+                         T     T                      SBBBB                           B   B  TT    T
+T      BBBB              T     T    B                                                   T  TTT     T
+         TTTS            T M   T         BB                      T    T                       T    T
+T       TT           B   TTT   M TT    B                      T T TT    T                          T
+      BBB  BB    BBBB      TTTT   T     BBS    BB            T  S  BT B  TTB                       T
+B        TTT           BB     T   T                        T T  B  B B   B                         B
+B                  BBBB     TTT   TTTT  BB                     BBB B     B                         T
+T           S          BB    T HHHHH  T       BBB                       T                          T
+                            TTTTTTTTTT   B                               T                         B
+T              B    B     B           B                                                            T

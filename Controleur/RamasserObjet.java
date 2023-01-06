@@ -1,21 +1,20 @@
 package Controleur;
 
-import Modele.Gland;
 import Modele.Personnage;
-import Vue.Icommande;
+import Modele.ZoneDeJeu;
 
-class RamasserObjet implements Icommande {
+public class RamasserObjet implements Icommande {
 
-  private Personnage personnage;
+  private Personnage personnage = Personnage.getInstance();
   @Override
-  public void execute() {
-    personnage.reposerObjet(new Gland());
+  public void execute(ZoneDeJeu zoneDeJeu) {
+    personnage.ramasserObjet(zoneDeJeu);
 
   }
 
   @Override
-  public void undo() {
-    personnage.reposerObjet(new Gland());
+  public void undo(ZoneDeJeu zoneDeJeu) {
+    personnage.reposerObjet(zoneDeJeu);
 
   }
 

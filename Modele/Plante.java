@@ -1,8 +1,9 @@
 package Modele;
 
-abstract class Plante {
-  private char car;
+public abstract class Plante {
+  protected String car;
 
-  private String couleur;
-
+  public String getCar() {
+    return car;
+  }
 }

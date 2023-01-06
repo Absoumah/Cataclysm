@@ -1,19 +1,20 @@
 package Controleur;
 
 import Modele.Personnage;
-import Vue.Icommande;
+import Modele.ZoneDeJeu;
 
-class SeBattre implements Icommande {
+public class SeBattre implements Icommande {
   @Override
-  public void execute() {
+  public void execute(ZoneDeJeu zoneDeJeu) {
+    personnage.seBattre(zoneDeJeu);
 
   }
 
   @Override
-  public void undo() {
+  public void undo(ZoneDeJeu zoneDeJeu) {
 
   }
 
-  private Personnage personnage;
+  private Personnage personnage = Personnage.getInstance();
 
 }

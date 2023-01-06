@@ -1,8 +1,22 @@
 package Modele;
 
-abstract class Aliment {
-  private char car;
+public abstract class Aliment {
+  protected int ligne;
+  protected int colonne;
 
-  private String couleur;
+  protected String car;
 
+  public int getLigne() {
+    return ligne;
+  }
+
+  public int getColonne() {
+    return colonne;
+  }
+
+  public String getCar() {
+    return car;
+  }
+
+  public Aliment() {}
 }

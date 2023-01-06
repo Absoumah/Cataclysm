@@ -1,12 +1,26 @@
 package Modele;
 
+import org.javatuples.Pair;
+
 abstract class EtatSerpent {
-  public void seDeplacer() {
+
+  protected Pair<Integer,Integer>[] voisins =new Pair[]{new Pair(0,1),new Pair(1,0), new Pair(-1,0), new Pair(0,-1),
+          new Pair(-1,1), new Pair(1,-1), new Pair<>(-1,1), new Pair<>(1,1)};
+  protected Serpent serpent;
+
+  protected String car;
+  public EtatSerpent(Serpent serpent) {
+    this.serpent=serpent;
   }
 
-  public void attaquer() {
+  abstract void seDeplacer(ZoneDeJeu zoneDeJeu);
+
+  abstract void attaquer(ZoneDeJeu zoneDeJeu);
+
+
+  public String getCar() {
+    return car;
   }
 
-  private Serpent serpent;
-
+  protected int tour =0;
 }

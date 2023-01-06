@@ -1,6 +1,6 @@
 package Modele;
 
 interface StrategieRenard {
-  void execute() ;
+  void execute(String[][] matrice, int i, int i1) ;
 
 }
