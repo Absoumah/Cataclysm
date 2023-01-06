@@ -1,0 +1,4 @@
+Modification quelques patterns après implémentation:
+
+Le pattern Singleton: ne sera finalement utilisé que pour le personnage et non sur les
+états car il effectué le déplacement que d'un seul écureuil par exemple.

@@ -1,0 +1,36 @@
+
+
+Partie:
+
+Dans ce projet nous avons installer une librairie permettant de créer des tuples d' entier en java(javatuples-3.0.jar) pour ainsi accéder aux voisins des objets.
+
+Pour demarrer la partie, il faut donner dans le main le nom du fichier correspondant à une zone de jeu.
+
+Le programme pourra alors déterminer quel zone de jeu correspond à ce fichier en lisant le contenu, puis créer ensuite les différents objets de cette zone.
+
+La partie peut commencer...
+
+-Un menu s'affiche et l'utilisateur fait son choix.
+
+-Chaque choix est une commande, qui est ensuite appelé par le controleur qui lui, connaissant toutes les commandes, va déclencher le comportement souhaité.
+
+-Après l'action de l'utilisateur, chaque animal dans la zone de jeu va aussi éffectuer un déplacement en fonction de son état ou de ce qu'il voit.
+
+-Un déplacement n'est possible que si la case est vide.
+
+Ces étapes sont repétes jusqu'à ce que le joueur décide d'arrêter la partie en appuyant 0 sur le menu.
+
+
+
+
+CAS RARE MAIS IMPORTANT:
+
+les déplacements n'étant pas asynchrones, Il se peut que la partie ne continue plus à cause du déplacement de certains animaux.
+
+Par exemple un écureuil junkie qui se déplace aléatoirement s'il est entouré de 3 arbres et un ecureuil d'un autre état alors cela  peut créer ce problème.
+
+En effet si l'écureuil junkie doit se déplacer avant l'autre écureuil, il sera bloqué dans cette zone ce qui créera une boucle infinie.
+
+
+
+ 
