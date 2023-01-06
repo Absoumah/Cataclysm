@@ -1,0 +1,48 @@
+
+
+
+
+//FÔRET
+
+Comme indiqué dans l'énoncer :
+
+Un écureuil affamé deviendra rassasié s’il se nourrit.
+Un écureuil rassasié sera de nouveau affamé au bout de 5 tours. il se préoccupe du danger.
+Un écureuil affamé qui se nourri sur une case adjacente au personnage deviendra son ami.
+Si le personnage donne un coup à l’écureuil, il ne sera plus son ami.
+Si l’écureuil mange un champignon venimeux, il devient junkie pendant 5 tours puis ensuite sera de
+nouveau affamé.
+Un écureuil junkie se déplace aléatoirement.
+
+Le déplacement d’un écureuil affamé dépend de ce qu’il voit autour de lui en suivant l'ordre de
+priorité ci-dessous :
+1. S'il voit un gland : peu importe le danger, il va le chercher et le mange. L’écureuil prend la place
+du gland.
+2. S'il voit un champignon: il va le chercher et le mange. L’écureuil prend la place du champignon.
+3. Si à moins de 4 cases, il voit un danger et :
+	(a) Si vous êtes amis et à proximité : il court vers votre poche,
+	(b) S'il y a un arbre : il court vers l'arbre pour s'y réfugier,
+	(c) S'il y a un buisson : il court vers le buisson pour s'y réfugier,
+	(d) Sinon : il court dans le sens oppose au danger pour se placer dans la première case vide.
+
+Les renards attaquent les écureuils qui se déplacent dans une case adjacente à leur case et les tuent
+
+//JUNGLE
+
+Un singe affamé deviendra rassasié s’il se nourrit.
+Un singe rassasié sera de nouveau affamé au bout de 3 tours.
+Un singe affamé qui se trouve sur une case adjacente au personnage qui détient une banane
+deviendra son ami car le personnage lui donnera la banane.
+Si le singe mange un champignon hallucinogène, il perd la notion du danger pendant 3 tours puis ensuite sera de nouveau affamé.
+
+Le déplacement d’un singe affamé dépend de ce qu’il voit autour de lui en suivant l'ordre de priorité
+ci-dessous :
+1. Si à moins de 4 cases, il voit un danger et :
+(a) S'il y a un cocotier : il s'y réfugie,
+(c) S'il y a un buisson : il court vers le buisson pour s’y réfugier,
+(d) Sinon : il court dans le sens oppose au danger pour se placer dans la première case vide.
+2. S'il voit une banane, il va la chercher et la mange.
+3. S'il voit un champignon: il va le chercher et le mange.
+
+Les serpents se déplacent aléatoirement de deux cases s’ils
+sont sur le sol
