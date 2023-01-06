@@ -2,7 +2,7 @@
 
 Partie:
 
-Dans ce projet nous avons installer une librairie permettant ce créer des tuples de entier en java(javatuples-3.0.jar) pour ainsi accéder aux voisins des objets.
+Dans ce projet nous avons installer une librairie permettant de créer des tuples d' entier en java(javatuples-3.0.jar) pour ainsi accéder aux voisins des objets.
 
 Pour demarrer la partie, il faut donner dans le main le nom du fichier correspondant à une zone de jeu.
 
