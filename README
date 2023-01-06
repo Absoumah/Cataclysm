@@ -16,7 +16,7 @@ La partie peut commencer...
 
 -Après l'action de l'utilisateur, chaque animal dans la zone de jeu va aussi éffectuer un déplacement en fonction de son état ou de ce qu'il voit.
 
--Un déplacement n'est possible que si le case est vide.
+-Un déplacement n'est possible que si la case est vide.
 
 Ces étapes sont repétes jusqu'à ce que le joueur décide d'arrêter la partie en appuyant 0 sur le menu.
 
