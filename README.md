@@ -4,3 +4,6 @@ On demande de développer un jeu qui s’inspire du jeu Cataclysm: Dark Days Ahe
 La zone de jeu est représentée comme une matrice de caractères. Toute l'interface se fera dans un
 terminal. Votre personnage pourra se déplacer, se battre, ramasser des objets à l'aide d'un menu
 textuel. Il peut aussi reposer un objet ou un écureuil qui était dans sa poche.
+
+Rendez-vous sur la branche master pour cloner le projet
+
