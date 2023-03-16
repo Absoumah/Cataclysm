@@ -5,5 +5,7 @@ La zone de jeu est représentée comme une matrice de caractères. Toute l'inter
 terminal. Votre personnage pourra se déplacer, se battre, ramasser des objets à l'aide d'un menu
 textuel. Il peut aussi reposer un objet ou un écureuil qui était dans sa poche.
 
+Utilisation des design patterns : fabrique abstraite, commande, etat, stratégie
+
 Rendez-vous sur la branche master pour cloner le projet
 
